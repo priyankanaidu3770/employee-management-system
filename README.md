@@ -213,9 +213,6 @@ http://localhost:5173
 ```
 
 ---
-
-# Screenshots
-
 ## Login Page
 
 - Secure JWT Authentication
