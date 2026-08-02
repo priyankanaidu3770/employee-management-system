@@ -1,0 +1,77 @@
+.employee-layout{
+    display:flex;
+    min-height:100vh;
+    background:#f4f7fc;
+}
+
+.employee-content{
+    flex:1;
+    margin-left:250px;
+    padding:30px;
+}
+
+.employee-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.employee-top h1{
+    color:#1f3bb3;
+    font-size:32px;
+    font-weight:700;
+}
+
+.employee-content h3{
+    margin:20px 0;
+    color:#444;
+}
+
+.MuiPaper-root{
+    border-radius:15px !important;
+    overflow:hidden;
+}
+
+.MuiDataGrid-root{
+    border:none !important;
+}
+
+.MuiDataGrid-columnHeaders{
+    background:#1f3bb3;
+    color:#ffffff;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.MuiDataGrid-cell{
+    font-size:15px;
+}
+
+.MuiDataGrid-row:hover{
+    background:#f2f6ff;
+}
+
+.MuiButton-contained{
+    text-transform:none !important;
+    font-weight:600 !important;
+}
+
+@media(max-width:900px){
+
+.employee-content{
+    margin-left:0;
+    padding:20px;
+}
+
+.employee-top{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+}
+
+.employee-top button{
+    width:100%;
+}
+
+}

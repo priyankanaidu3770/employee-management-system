@@ -1,0 +1,79 @@
+.history-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f7fc;
+}
+
+.history-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 30px;
+}
+
+.history-content h1 {
+    color: #1f3bb3;
+    margin-bottom: 25px;
+}
+
+.history-content table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.history-content thead {
+    background: #1f3bb3;
+    color: white;
+}
+
+.history-content th,
+.history-content td {
+    padding: 15px;
+    text-align: center;
+}
+
+.history-content tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+.history-content tbody tr:hover {
+    background: #f9f9f9;
+}
+
+.status {
+    padding: 8px 14px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.status.pending {
+    background: orange;
+}
+
+.status.approved {
+    background: green;
+}
+
+.status.rejected {
+    background: crimson;
+}
+
+@media (max-width: 768px) {
+
+    .history-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .history-content table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+}

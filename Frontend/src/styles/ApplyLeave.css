@@ -1,0 +1,90 @@
+.leave-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f7fc;
+}
+
+.leave-content {
+    flex: 1;
+    margin-left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.leave-card {
+    width: 500px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.leave-card h2 {
+    text-align: center;
+    color: #1f3bb3;
+    margin-bottom: 25px;
+}
+
+.leave-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.leave-card label {
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+}
+
+.leave-card input,
+.leave-card textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.leave-card input:focus,
+.leave-card textarea:focus {
+    border-color: #1f3bb3;
+    box-shadow: 0 0 5px rgba(31,59,179,0.3);
+}
+
+.leave-card textarea {
+    resize: vertical;
+}
+
+.leave-card button {
+    background: #1f3bb3;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.leave-card button:hover {
+    background: #162d8a;
+}
+
+@media (max-width:768px){
+
+    .leave-content{
+        margin-left:0;
+        padding:20px;
+    }
+
+    .leave-card{
+        width:100%;
+    }
+
+}
